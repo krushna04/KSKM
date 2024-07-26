@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KSKM</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-container border-white">
+                <a class="logo" href="index.html">
+                    <p ><b>Logo</b></p>
+                </a>
+            </div>
+            <div class="match-container1 border-white">
+                <p class="match"><b>Start a Match</b></p>
+            </div>
+            <div class="profile-container border-white">
+                <p class="profile">Profile</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="img-container">
+                <div class="setup-container">
+                    <div class="match-setup">
+                        <h1 class="match1"><b>Match Setup</b></h1>
+                            <form action="connect.php" method="post" class="form-setup">
+                                <div>
+                                    <label for="no_of_set_per_game">No of set</label>
+                                    <input type="text" class="form-control" id="no_of_set_per_game" name="no_of_set_per_game">
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="no_of_point_per_set">No of point per set</label>
+                                    <input type="text" class="form-control" id="no_of_point_per_set" name="no_of_point_per_set">
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="two_point_difference_to_win_set">Two point difference to win set</label>
+                                    <input type="radio" name="two_point_difference_to_win_set" value="y">YES
+                                    <input type="radio" name="two_point_difference_to_win_set" value="n">NO
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="tie break in last set">Tie break in last set</label>
+                                    <input type="radio" name="tie_break_in_last_set" value="y">YES
+                                    <input type="radio" name="tie_break_in_last_set" value="n">NO
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="termination_of_match">Termination of match</label>
+                                    <input type="radio" name="termination_of_match" value="finish_match">Finish match when team win
+                                    <input type="radio" name="termination_of_match" value="finish_all_set">Finish all the set
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="timeout1">Timeout</label>
+                                    <input type="radio" name="timeout1" value="y">YES
+                                    <input type="radio" name="timeout1" value="n">NO
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="team_timeout">Team timeout</label>
+                                    <input type="text" class="form-control" id="team_timeout" name="team_timeout">
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="duration_of_a_team_timeout">Duration of a team timeout</label>
+                                    <input type="text" class="form-control" id="duration_of_a_team_timeout" name="duration_of_a_team_timeout">
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="tech_time_out">Tech timeout</label>
+                                    <input type="radio" name="tech_time_out" value="y">YES
+                                    <input type="radio" name="tech_time_out" value="n">NO
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="duration_of_tech_timeout">Duration of tech timeout</label>
+                                    <input type="text" class="form-control" id="duration_of_tech_timeout" name="duration_of_tech_timeout">
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="duration_of_game_interval">Duration of game interval</label>
+                                    <input type="text" class="form-control" id="duration_of_game_interval" name="duration_of_game_interval">
+                                </div>
+                                <br>
+                                <div>
+                                    <button class="" type="submit">Next</button>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
